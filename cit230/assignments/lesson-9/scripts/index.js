@@ -12,16 +12,19 @@ daCity.onload = function () {
         document.getElementById('rain').innerHTML = weatherInfo.towns["0"].averageRainfall;
         document.getElementById('pop').innerHTML = weatherInfo.towns["0"].currentPopulation;
         document.getElementById('yer').innerHTML = weatherInfo.towns["0"].yearFounded;
-       var Events = weatherInfo.towns["0"].events;
-       for (var j = 0; j < Events.length; j++) {
-           var listItem = document.getElementById('eve').innerHTML = weatherInfo.towns["0"].events;
-       }
+        var Events = weatherInfo.towns["0"].events;
+        for (var j = 0; j < Events.length; j++) {
+            var listItem = document.getElementById('eve').innerHTML = weatherInfo.towns["0"].events + '<br />';
+        }
 
-            document.getElementById('green').innerHTML = weatherInfo.towns["1"].name;
-            document.getElementById('motog').innerHTML = weatherInfo.towns["1"].motto;
-            document.getElementById('raing').innerHTML = weatherInfo.towns["1"].averageRainfall;
-            document.getElementById('popg').innerHTML = weatherInfo.towns["1"].currentPopulation;
-            document.getElementById('yerg').innerHTML = weatherInfo.towns["1"].yearFounded;
+        document.getElementById('green').innerHTML = weatherInfo.towns["1"].name;
+        document.getElementById('motog').innerHTML = weatherInfo.towns["1"].motto;
+        document.getElementById('raing').innerHTML = weatherInfo.towns["1"].averageRainfall;
+        document.getElementById('popg').innerHTML = weatherInfo.towns["1"].currentPopulation;
+        document.getElementById('yerg').innerHTML = weatherInfo.towns["1"].yearFounded;
+//        var Events = weatherInfo.towns["1"].events;
+//        for (var j = 1; j < Events.length; j++) {
+//            var listItem = document.getElementById('eve1').innerHTML = weatherInfo.towns["1"].events + '<br />';
 
 
             document.getElementById('spring').innerHTML = weatherInfo.towns["3"].name;
@@ -29,10 +32,19 @@ daCity.onload = function () {
             document.getElementById('rains').innerHTML = weatherInfo.towns["3"].averageRainfall;
             document.getElementById('pops').innerHTML = weatherInfo.towns["3"].currentPopulation;
             document.getElementById('yers').innerHTML = weatherInfo.towns["3"].yearFounded;
+            var Events = weatherInfo.towns["3"].events;
+            for (var j = 3; j < Events.length; j++) {
+                var listItem = document.getElementById('eve3').innerHTML = weatherInfo.towns["3"].events + '<br />';
+                
+                
+                
+                
+                
+                
 
-            //    
-            //    var iconcode = weatherInfo.weather[0].icon;
-            //    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
-            //    document.getElementById('weather_icon').src = icon_path
+                //    
+                //    var iconcode = weatherInfo.weather[0].icon;
+                //    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
+                //    document.getElementById('weather_icon').src = icon_path
 
-        }
+            }
