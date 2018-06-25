@@ -34,73 +34,81 @@
   </header>
  
   <main>
-    <h2>Franklin's Weather</h2>
-    <figure> <img src ="images/franklin-SMOL.jpg 400w" 
-             srcset ="images/franklin-MED.jpg 800w, 
-             images/franklin-LARGE.jpg 1200w"></figure>
-    <section class="weather-summary">
-      <h3>Weather Summary</h3>    
-      <div class="highlow">
-          <p>High:90&deg;F </p>
-        <p>Low:66&deg;F</p>  
-      </div>
-      <div class="current">
-        Sunny
-        <picture>
-            <img src="images/aerial-view-architecture-buildings-681361.jpg" alt="Sunny Day in Franklin">
-        </picture>
-      </div>   
-      <div class="conditions">
-        <h3>Current Conditions</h3> 
-        <p>Temperature: <span id= "temp"></span>&deg;F </p>
-        <p>Precipitation:0%</p>  
-        <p>Wind Speed:<span id= "windSpeed"></span> mph SW
-        </p>  
-        <p>Wind Chill : <span id= "wcyo"></span>&deg;</p>
-      </div>           
-    </section>
-        
-    <section class="forecast">
-      <h3>Ten Day Forecast</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-	</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-	</tbody>
-      </table>
-    </section>
-      
-    <article>
-      <h3>Franklin Breaks Record</h3>	
-      <img src="images/aerial-architecture-autumn-681368.jpg" alt="Another Record Day in Franklin">
-      <p class="town-article">Lorem ipsum dolor sit amet, ne eum vivendum facilisi molestiae. Officiis pericula ei nec. Sea an vitae nullam platonem. Dico persecuti te ius, ei nec quando commodo.Lorem ipsum dolor sit amet, ne eum vivendum facilisi molestiae. Officiis pericula ei nec. Sea an vitae nullam platonem. Dico persecuti te ius, ei nec quando commodo.Lorem ipsum dolor sit amet, ne eum vivendum facilisi molestiae. Officiis pericula ei nec. Sea an vitae nullam platonem. Dico persecuti te ius, ei nec quando commodo.
-      </p>
-    </article>		  
-  
+   
+    <form method="get" action="thanks.html">
+            <legend>Report the weather in your area and stay up to date with our Weather or Not email or text messages! (optional)
+            </legend>
+            <section class="formcontainer">
+                <fieldset>
+                    <legend>Report the weather</legend>
+
+                    <label class="top">*First Name:<input type="text" name="fName" pattern="[A-Za-z ]{3,}" title="fname" required></label>
+
+                    <label class="top">*Last Name:<input type="text" name="lName" pattern="[A-Za-z ]{3,}" required></label>
+
+                    <label class="top">Email:<input type="email" name="email" placeholder="example@gmail.com"></label>
+
+                    <label class="top">*Telephone Number:<input type="tel" name="tele" pattern="[0-9]{10,}" required></label>
+
+                    <label class="top">*Zip Code:<input type="number" name="zipCode" pattern="[0-9]{5,}" required></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm information</legend>
+                    <label class="top">Storm Date:<input type="date" name="date"></label>
+
+                    <label class="top">Storm Type:
+                <input list="browsers" name="stormtype" placeholder="Please Select One...">
+                <datalist id="browsers">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thunderstorm">
+                <option value="Tornado">
+                </datalist>
+                </label>
+
+                    <label for="rating" class="top">Storm Severity: <span id="ratingvalue">5</span><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		        </label>
+
+                    <label class="top">Storm Region
+                <select name="stormRegion">
+                    <option value="">Select Region ...</option>
+                    <option value="region">Franklin</option>
+                    <option value="region">Greenville</option>
+                    <option value="region">Springfield</option>
+                </select>
+                
+                
+                <div>
+               <label>Are conditions dangerous?<br><br>
+               <input type="radio" name="inDanger" value="yes" class="radio"> Yes</label>
+                    </div>
+
+                    <div>
+                        <label>
+                <input type="radio" name="inDanger" value="maybe" class="radio"> Maybe</label>
+                    </div>
+
+                    <div>
+                        <label>
+                <input type="radio" name="inDanger" value="no" class="radio"> No</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information Or Comments</legend>
+                    <label class="top"><textarea name="additionalComments" rows="10" cols="35">
+                </textarea></label>
+
+                </fieldset>
+            </section>
+
+            <input type="submit" value="Submit" class="submitBtn">
+
+        </form>
   </main>
     
   <footer>
