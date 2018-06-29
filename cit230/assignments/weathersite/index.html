@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Watcher &#8226; Franklin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Franklin Weather Page - brought to you by Weather Watcher">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Lora" rel="stylesheet">
+</head>
+
+<body>
+
+    <header w3-include-html='modules/header.html'>
+        <button class="hamburger" onclick="toggleHam()"> <img src="images/Hamburger_icon.png"> </button>
+    </header>
+
+    <main>
+
+        <section>
+            <div>
+                <h2 id="frank"></h2>
+                <p>Motto: <span id="motto"></span></p>
+                <p>Avg. Rainfall: <span id="rain"></span> in</p>
+                <p>Population: <span id="pop"></span> </p>
+                <p>Year Founded: <span id="yer"></span></p>
+                <p>Events: <span id="eve"></span></p>
+
+
+            </div>
+            <div>
+                <h2 id="green"></h2>
+                <p>Motto: <span id="motog"></span></p>
+                <p>Avg. Rainfall: <span id="raing"></span> in</p>
+                <p>Population: <span id="popg"></span> </p>
+                <p>Year Founded: <span id="yerg"></span></p>
+                <p>Events: <span id="eve1"></span></p>
+
+            </div>
+            <div>
+                <h2 id="spring"></h2>
+                <p>Motto: <span id="motos"></span></p>
+                <p>Avg. Rainfall: <span id="rains"></span> in</p>
+                <p>Population: <span id="pops"></span> </p>
+                <p>Year Founded: <span id="yers"></span></p>
+                <p>Events: <span id="eve3"></span></p>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer w3-include-html='modules/footer.html'></footer>
+
+    <script src="scripts/include.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/index.js"></script>
+
+
+</body>
+
+</html>
