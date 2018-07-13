@@ -21,6 +21,10 @@ body {
     margin: 0 auto;
 }
 
+footer {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
 /* header styles */
 
 h1 {
@@ -54,9 +58,8 @@ h2 {
     letter-spacing: -5px;
     margin-bottom: 10px;
 }
-
-?????????? .container {
-    max-width: 1080px;
+/*----------------------*/
+.container {
     margin: 0 auto;
 }
 
@@ -64,7 +67,7 @@ h2 {
     display: flex;
     background-color: #F3DE8A;
     color: #000;
-    padding: 1em 1.5em;
+    padding: 2em .5em;
     margin-top: 40px;
 }
 
@@ -96,4 +99,7 @@ h2 {
 
 .navbar-link > ul > li > a:hover {
     text-decoration: underline;
+}
+.container, .navbar, navbar-brand, navbar-link {
+    width: 100%;
 }
