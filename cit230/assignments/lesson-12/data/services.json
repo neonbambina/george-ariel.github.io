@@ -1,0 +1,28 @@
+//services
+{
+    "services": [
+        {
+            "name": "clean",
+            "price": 5.00
+
+        },
+        {
+            "name": "clean",
+            "price": 5.00
+
+        },
+        {
+            "name": "clean",
+            "price": 5.00
+
+        }, {
+            "name": "clean",
+            "price": 5.00
+
+        }, {
+            "name": "clean",
+            "price": 5.00
+
+        }
+    ]
+}
