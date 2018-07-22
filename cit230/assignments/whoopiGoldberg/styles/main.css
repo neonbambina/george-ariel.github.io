@@ -1,0 +1,219 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: block;
+    width: 55%;
+    margin: 5% auto;
+    padding: 5%;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+
+.navigation.responsive {
+    position: relative;
+}
+
+.navigation.responsive li {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: right;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #ddd;
+}
+
+
+
+body,
+p {
+    font-size: 1.8em;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #F3DE8A;
+    color: black;
+}
+
+header,
+main,
+footer {
+    font-family: 'Libre Franklin', sans-serif;
+    max-width: 100%;
+    font-size: .45em;
+
+}
+
+header {
+    margin: auto;
+}
+
+header h1 {
+    font-size: 2em;
+    padding: .05em;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 2em;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    border: none;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+nav {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .05em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: #001e00;
+    background-color: #F3DE8A;
+}
+
+nav ul li.active a {
+    border-bottom: solid;
+    border-color: #095256;
+    color: #095256;
+
+}
+
+nav ul li a:hover {
+    border-bottom: solid;
+    border-color: #272838;
+    color: #272838;
+}
+
+#mainmenu {
+    align-content: right;
+}
+
+
+
+
+
+main {
+    width: 100%;
+    border: none;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
+main h2 {
+    font-size: 1.7em;
+}
+
+main h3 {
+    font-size: 1.4em;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.item {
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.talk {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: left;
+}
+#talk {
+    font-weight: 900;
+}
+#horas {
+    font-weight: 500;
+}
+
+
+/*table */
+
+table {
+    text-align: left;
+}
+
+#n1,#n2,#n3,#n4 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+fieldset {
+    border: none;
+    text-align: left;
+}
+
+
+
+/*wayfinding */
+
+.active:hover a {
+    border-bottom: solid;
+    border-color: white;
+    color: white;
+}
+
+.push {
+    height: 170px;
+}
+
+.lol {
+    margin-bottom: -50px;
+}
+
+
+footer {
+    margin-top: 25px;
+    text-align: center;
+}
